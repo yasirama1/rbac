@@ -29,9 +29,9 @@ mongoose.connect(config.dbpath, { useNewUrlParser: true },
         // console.log(error)
         console.log('Connection to database established!')
     })
-
+    
 var server = app.listen(config.port || 8080, function () {
     var host = server.address().address;
     var port = server.address().port;
     console.log('Listening at localhost', host, port);
-});
+})
